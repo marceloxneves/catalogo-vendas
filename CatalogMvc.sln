@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infra.Data", "Catal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Infra.Ioc", "Catalog.Infra.Ioc\Catalog.Infra.Ioc.csproj", "{337FBC34-6FA3-4771-8603-6E598DFC32AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Domain.Tests", "Catalog.Domain.Tests\Catalog.Domain.Tests.csproj", "{585FAACE-7A41-40F2-B10C-CDCE57DE923F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,13 @@ Global
 		{337FBC34-6FA3-4771-8603-6E598DFC32AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{337FBC34-6FA3-4771-8603-6E598DFC32AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{337FBC34-6FA3-4771-8603-6E598DFC32AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C5ED49-E8E1-4BCE-A15D-A806B0045868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C5ED49-E8E1-4BCE-A15D-A806B0045868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C5ED49-E8E1-4BCE-A15D-A806B0045868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C5ED49-E8E1-4BCE-A15D-A806B0045868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585FAACE-7A41-40F2-B10C-CDCE57DE923F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585FAACE-7A41-40F2-B10C-CDCE57DE923F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585FAACE-7A41-40F2-B10C-CDCE57DE923F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585FAACE-7A41-40F2-B10C-CDCE57DE923F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
