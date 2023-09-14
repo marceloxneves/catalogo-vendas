@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Catalog.Application.Implementations;
+using Catalog.Application.Interfaces;
+using Catalog.Application.Mappings;
 using Catalog.Domain.Interfaces;
 using Catalog.Infra.Data.Context;
 using Catalog.Infra.Data.Repositories;
@@ -21,6 +24,13 @@ namespace Catalog.Infra.Ioc
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(myhandlers));
 
             return services;
         }
